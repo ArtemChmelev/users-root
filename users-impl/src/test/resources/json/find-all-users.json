@@ -1,0 +1,41 @@
+{
+  "content": [
+    {
+      "lastName": "test",
+      "firstName": "test",
+      "patronymic": "test",
+      "dateOfBirth": "2007-12-03T10:15:30"
+    },
+    {
+      "lastName": "test1",
+      "firstName": "test1",
+      "patronymic": "test1",
+      "dateOfBirth": "2007-12-03T10:15:30"
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "empty": true,
+      "unsorted": true,
+      "sorted": false
+    },
+    "offset": 0,
+    "pageNumber": 0,
+    "pageSize": 100,
+    "paged": true,
+    "unpaged": false
+  },
+  "last": true,
+  "totalPages": 1,
+  "totalElements": 2,
+  "size": 100,
+  "number": 0,
+  "sort": {
+    "empty": true,
+    "unsorted": true,
+    "sorted": false
+  },
+  "first": true,
+  "numberOfElements": 2,
+  "empty": false
+}

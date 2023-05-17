@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+    <!--changeSet создания тега v.1.0.0 для сохранения состояния базы данных".
+    В случае критических ошибок, можно будет сделать rollback до определенной версии-->
+    <changeSet id="v.1.0.0" author="Chmelev">
+        <tagDatabase tag="v.1.0.0"/>
+    </changeSet>
+</databaseChangeLog>

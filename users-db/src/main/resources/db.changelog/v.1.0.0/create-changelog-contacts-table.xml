@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+    <!--changeSet создания таблицы "Контактная информация"-->
+    <changeSet id="create_table_contacts" author="chmelev">
+        <createTable tableName="contacts">
+            <column name="id" type="${uuid_type}">
+                <constraints primaryKey="true" primaryKeyName="pk_contacts_id"
+                             references="users(id)" foreignKeyName="fk_users_id"/>
+            </column>
+            <column name="phone_number" type="varchar(20)">
+                <constraints nullable="false" unique="true" uniqueConstraintName="uq_contacts_number"/>
+            </column>
+            <column name="email" type="varchar(64)">
+                <constraints nullable="false" unique="true" uniqueConstraintName="uq_contacts_email"/>
+            </column>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,10 @@
+{
+  "lastName": "Пешняков",
+  "firstName": "Даниил",
+  "patronymic": "Алексеевич",
+  "dateOfBirth": "2007-12-03T10:15:30",
+  "contacts": {
+    "phoneNumber": "89994560880",
+    "email": "123@email.ru"
+  }
+}
